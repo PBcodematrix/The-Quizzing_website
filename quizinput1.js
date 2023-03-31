@@ -94,7 +94,7 @@ for (const radio of radios) {
            })
            .then(() => {
   
-               alert("data stored");
+//                alert("data stored");
            })
            .catch((error) => {
                alert(error);
@@ -248,7 +248,7 @@ document.getElementById("saveQuiz").addEventListener('click', (e) => {
 
     })
         .then(() => {
-            alert("data stored");
+//             alert("data stored");
         })
         .catch((error) => {
             alert(error);
