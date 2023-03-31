@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Data</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=643dc080517d4' async='true'></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="display.css">
+  <link rel="stylesheet" href="displayquizqs.css">
+</head>
+
+<body>
+<!--.........................................Topics........................ -->
+  <div class="container1">
+    <h1 id="user1">Poll Status</h1>
+
+    <div class="quizzes">
+
+
+      <ol id="add-topic">
+
+      </ol>
+    </div>
+
+  </div>
+
+  <div class="d-flex justify-content-center" id="loadContent">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+<!-- .......................................CANVAS CHART POPUP............................  -->
+  <div class="popup close" id="Foodpopup">
+
+    <h2 id="play1">Food Status</h2>
+    <div class="question" id="Qs1">
+      <h2 class="chart-heading">Qs 1</h2>
+      <div class="programming-stats">
+        <div class="chart-container" id="FoodhideChart">
+          <canvas class="my-chart" id="Foodqs1"></canvas>
+        </div>
+
+        <div class="details" id="Fooddetail1">
+          <ul>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs2">
+      <h2 class="chart-heading">Qs 2</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Foodqs2"></canvas>
+        </div>
+
+        <div class="details" id="Fooddetail2">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs3">
+      <h2 class="chart-heading">Qs 3</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Foodqs3"></canvas>
+        </div>
+
+        <div class="details" id="Fooddetail3">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs4">
+      <h2 class="chart-heading">Qs 4</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Foodqs4"></canvas>
+        </div>
+
+        <div class="details" id="Fooddetail4">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs5">
+      <h2 class="chart-heading">Qs 5</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Foodqs5"></canvas>
+        </div>
+
+        <div class="details" id="Fooddetail5">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+
+    <button id="Foodbttn" class="btn btn-primary">Close</button>
+
+
+
+
+  </div>
+
+  <div class="popup close" id="Corporatepopup">
+
+    <h2 id="play1">Corporate Status</h2>
+    <div class="question" id="Qs1">
+      <h2 class="chart-heading">Qs 1</h2>
+      <div class="programming-stats">
+        <div class="chart-container" id="CorporatehideChart">
+          <canvas class="my-chart" id="Corporateqs1"></canvas>
+        </div>
+
+        <div class="details" id="Corporatedetail1">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs2">
+      <h2 class="chart-heading">Qs 2</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Corporateqs2"></canvas>
+        </div>
+
+        <div class="details" id="Corporatedetail2">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs3">
+      <h2 class="chart-heading">Qs 3</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Corporateqs3"></canvas>
+        </div>
+
+        <div class="details" id="Corporatedetail3">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs4">
+      <h2 class="chart-heading">Qs 4</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Corporateqs4"></canvas>
+        </div>
+
+        <div class="details" id="Corporatedetail4">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs5">
+      <h2 class="chart-heading">Qs 5</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Corporateqs5"></canvas>
+        </div>
+
+        <div class="details" id="Corporatedetail5">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+
+    <button id="Corporatebttn" class="btn btn-primary">Close</button>
+
+
+
+
+  </div>
+
+  <div class="popup close" id="Musicpopup">
+
+    <h2 id="play1">Music Status</h2>
+    <div class="question" id="Qs1">
+      <h2 class="chart-heading">Qs 1</h2>
+      <div class="programming-stats">
+        <div class="chart-container" id="MusichideChart">
+          <canvas class="my-chart" id="Musicqs1"></canvas>
+        </div>
+
+        <div class="details" id="Musicdetail1">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs2">
+      <h2 class="chart-heading">Qs 2</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Musicqs2"></canvas>
+        </div>
+
+        <div class="details" id="Musicdetail2">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs3">
+      <h2 class="chart-heading">Qs 3</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Musicqs3"></canvas>
+        </div>
+
+        <div class="details" id="Musicdetail3">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs4">
+      <h2 class="chart-heading">Qs 4</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Musicqs4"></canvas>
+        </div>
+
+        <div class="details" id="Musicdetail4">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs5">
+      <h2 class="chart-heading">Qs 5</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Musicqs5"></canvas>
+        </div>
+
+        <div class="details" id="Musicdetail5">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+
+    <button id="Musicbttn" class="btn btn-primary">Close</button>
+
+
+
+
+  </div>
+
+  <div class="popup close" id="General-Knowledgepopup">
+
+    <h2 id="play1">General-Knowledge Status</h2>
+    <div class="question" id="Qs1">
+      <h2 class="chart-heading">Qs 1</h2>
+      <div class="programming-stats">
+        <div class="chart-container" id="General-KnowledgehideChart">
+          <canvas class="my-chart" id="General-Knowledgeqs1"></canvas>
+        </div>
+
+        <div class="details" id="General-Knowledgedetail1">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs2">
+      <h2 class="chart-heading">Qs 2</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="General-Knowledgeqs2"></canvas>
+        </div>
+
+        <div class="details" id="General-Knowledgedetail2">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs3">
+      <h2 class="chart-heading">Qs 3</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="General-Knowledgeqs3"></canvas>
+        </div>
+
+        <div class="details" id="General-Knowledgedetail3">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs4">
+      <h2 class="chart-heading">Qs 4</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="General-Knowledgeqs4"></canvas>
+        </div>
+
+        <div class="details" id="General-Knowledgedetail4">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs5">
+      <h2 class="chart-heading">Qs 5</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="General-Knowledgeqs5"></canvas>
+        </div>
+
+        <div class="details" id="General-Knowledgedetail5">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+
+    <button id="General-Knowledgebttn" class="btn btn-primary">Close</button>
+
+
+
+
+  </div>
+
+  <div class="popup close" id="Literaturepopup">
+
+    <h2 id="play1">Literature Status</h2>
+    <div class="question" id="Qs1">
+      <h2 class="chart-heading">Qs 1</h2>
+      <div class="programming-stats">
+        <div class="chart-container" id="LiteraturehideChart">
+          <canvas class="my-chart" id="Literatureqs1"></canvas>
+        </div>
+
+        <div class="details" id="Literaturedetail1">
+          <ul>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs2">
+      <h2 class="chart-heading">Qs 2</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Literatureqs2"></canvas>
+        </div>
+
+        <div class="details" id="Literaturedetail2">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs3">
+      <h2 class="chart-heading">Qs 3</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Literatureqs3"></canvas>
+        </div>
+
+        <div class="details" id="Literaturedetail3">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs4">
+      <h2 class="chart-heading">Qs 4</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Literatureqs4"></canvas>
+        </div>
+
+        <div class="details" id="Literaturedetail4">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs5">
+      <h2 class="chart-heading">Qs 5</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Literatureqs5"></canvas>
+        </div>
+
+        <div class="details" id="Literaturedetail5">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+
+    <button id="Literaturebttn" class="btn btn-primary">Close</button>
+
+
+
+
+  </div>
+
+  <div class="popup close" id="Sportspopup">
+
+    <h2 id="play1">Sports Status</h2>
+    <div class="question" id="Qs1">
+      <h2 class="chart-heading">Qs 1</h2>
+      <div class="programming-stats">
+        <div class="chart-container" id="SportshideChart">
+          <canvas class="my-chart" id="Sportsqs1"></canvas>
+        </div>
+
+        <div class="details" id="Sportsdetail1">
+          <ul>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs2">
+      <h2 class="chart-heading">Qs 2</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Sportsqs2"></canvas>
+        </div>
+
+        <div class="details" id="Sportsdetail2">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs3">
+      <h2 class="chart-heading">Qs 3</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Sportsqs3"></canvas>
+        </div>
+
+        <div class="details" id="Sportsdetail3">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs4">
+      <h2 class="chart-heading">Qs 4</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Sportsqs4"></canvas>
+        </div>
+
+        <div class="details" id="Sportsdetail4">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs5">
+      <h2 class="chart-heading">Qs 5</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Sportsqs5"></canvas>
+        </div>
+
+        <div class="details" id="Sportsdetail5">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+
+    <button id="Sportsbttn" class="btn btn-primary">Close</button>
+
+
+
+
+  </div>
+  <div class="popup close" id="Video-Gamespopup">
+
+    <h2 id="play1">Video-Games Status</h2>
+    <div class="question" id="Qs1">
+      <h2 class="chart-heading">Qs 1</h2>
+      <div class="programming-stats">
+        <div class="chart-container" id="Video-GameshideChart">
+          <canvas class="my-chart" id="Video-Gamesqs1"></canvas>
+        </div>
+
+        <div class="details" id="Video-Gamesdetail1">
+          <ul>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs2">
+      <h2 class="chart-heading">Qs 2</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Video-Gamesqs2"></canvas>
+        </div>
+
+        <div class="details" id="Video-Gamesdetail2">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs3">
+      <h2 class="chart-heading">Qs 3</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Video-Gamesqs3"></canvas>
+        </div>
+
+        <div class="details" id="Video-Gamesdetail3">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs4">
+      <h2 class="chart-heading">Qs 4</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Video-Gamesqs4"></canvas>
+        </div>
+
+        <div class="details" id="Video-Gamesdetail4">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="question" id="Qs5">
+      <h2 class="chart-heading">Qs 5</h2>
+      <div class="programming-stats">
+        <div class="chart-container">
+          <canvas class="my-chart" id="Video-Gamesqs5"></canvas>
+        </div>
+
+        <div class="details" id="Video-Gamesdetail5">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+
+    <button id="Video-Gamesbttn" class="btn btn-primary">Close</button>
+
+
+
+
+  </div>
+ 
+
+  <div>
+    <button type="button" class="btn btn-primary backbtn"><a href="index.html" class="nav-link">Back</a></button>
+  </div>
+
+  <!-- ..................................SHOW QUIZ POPUP............................. -->
+
+
+  <div class="popupquiz">
+
+    <h1 class="title" id="quiztopic">Title</h1>
+    <div class="container mt-sm-5 my-1">
+      <div class="question ml-sm-5 pl-sm-5 pt-2">
+
+        <div class="py-2 h5"><b id="qs1"></b></div>
+        <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" >
+          <ol>
+            <li class="options" id="qs1opt1">
+
+            </li>
+            <li class="options" id="qs1opt2">
+
+            </li>
+            <li class="options" id="qs1opt3">
+
+            </li>
+            <li class="options" id="qs1opt4">
+            </li>
+
+          </ol>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-sm-5 my-1">
+      <div class="question ml-sm-5 pl-sm-5 pt-2">
+
+        <div class="py-2 h5"> <b id="qs2"></b></div>
+        <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" >
+          <ol>
+            <li class="options" id="qs2opt1">
+
+            </li>
+            <li class="options" id="qs2opt2">
+
+            </li>
+            <li class="options" id="qs2opt3">
+
+            </li>
+            <li class="options" id="qs2opt4">
+            </li>
+
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-sm-5 my-1">
+      <div class="question ml-sm-5 pl-sm-5 pt-2">
+
+        <div class="py-2 h5"> <b id="qs3"></b></div>
+        <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" >
+          <ol>
+            <li class="options" id="qs3opt1">
+
+            </li>
+            <li class="options" id="qs3opt2">
+
+            </li>
+            <li class="options" id="qs3opt3">
+
+            </li>
+            <li class="options" id="qs3opt4">
+
+            </li>
+
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-sm-5 my-1">
+      <div class="question ml-sm-5 pl-sm-5 pt-2">
+
+        <div class="py-2 h5"> <b id="qs4"></b></div>
+        <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" >
+          <ol>
+            <li class="options" id="qs4opt1">
+
+            </li>
+            <li class="options" id="qs4opt2">
+
+            </li>
+            <li class="options" id="qs4opt3">
+
+            </li>
+            <li class="options" id="qs4opt4">
+
+            </li>
+
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-sm-5 my-1">
+      <div class="question ml-sm-5 pl-sm-5 pt-2">
+
+        <div class="py-2 h5"> <b id="qs5"></b></div>
+        <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" >
+          <ol>
+            <li class="options" id="qs5opt1">
+
+            </li>
+            <li class="options" id="qs5opt2">
+
+            </li>
+            <li class="options" id="qs5opt3">
+
+            </li>
+            <li class="options" id="qs5opt4">
+
+            </li>
+
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" id="goBack" class="btn btn-primary ">Close</button>
+
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="display1.js" type="module"></script>
+  <script src="display.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Input</title>
+
+    <link rel="stylesheet" href="https://kit.fontawesome.com/0e483341be.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0e483341be.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="quizinput.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+   
+</head>
+<body onload ="openPopUp()" >
+    <div class="container" id="blur" >
+        <h1 id="top">Topic</h1>
+        <p>*Enter questions and choose correct answer</p>
+        <div class="formBox">
+            <form action="" >
+                <div class="input">
+                    <div class="input1 align">
+                    <div class="question"> <span>Qs</span>  <input type="text" name="question" id="qs1"> </div>
+                <div class="options">
+                    <div class="opt1"><input type="radio"  name="answer1" id="aoption1"> <input type="text" class="textin" name="answer" id="taoption1"> </div>
+                    <div class="opt2"><input type="radio"  name="answer1" id="aoption2"> <input type="text" class="textin" name="answer" id="taoption2"> </div>
+                    <div class="opt3"><input type="radio"  name="answer1" id="aoption3"> <input type="text" class="textin" name="answer" id="taoption3"> </div>
+                    <div class="opt4"><input type="radio"  name="answer1" id="aoption4"> <input type="text" class="textin" name="answer" id="taoption4"> </div>
+                </div>
+             </div>
+             <div class="input2 align">
+                <div class="question"> <span>Qs</span>  <input type="text" name="question" id="qs2"> </div>
+                <div class="options">
+                    <div class="opt1"><input type="radio"  name="answer2" id="boption1"> <input type="text" class="textin" name="answer" id="vboption1"> </div>
+                    <div class="opt2"><input type="radio"  name="answer2" id="boption2"> <input type="text" class="textin" name="answer" id="vboption2"> </div>
+                    <div class="opt3"><input type="radio"  name="answer2" id="boption3"> <input type="text" class="textin" name="answer" id="vboption3"> </div>
+                    <div class="opt4"><input type="radio"  name="answer2" id="boption4"> <input type="text" class="textin" name="answer" id="vboption4"> </div>
+                </div>
+            </div>
+                <div class="input3 align">
+                <div class="question"> <span>Qs</span>  <input type="text" name="question" id="qs3"> </div>
+                <div class="options">
+                    <div class="opt1"><input type="radio"  name="answer3" id="coption1"> <input type="text" class="textin" name="answer" id="ucoption1"> </div>
+                    <div class="opt2"><input type="radio"  name="answer3" id="coption2"> <input type="text" class="textin" name="answer" id="ucoption2"> </div>
+                    <div class="opt3"><input type="radio"  name="answer3" id="coption3"> <input type="text" class="textin" name="answer" id="ucoption3"> </div>
+                    <div class="opt4"><input type="radio"  name="answer3" id="coption4"> <input type="text" class="textin" name="answer" id="ucoption4"> </div>
+                </div>
+            </div>
+                <div class="input4 align">
+                <div class="question"> <span>Qs</span>  <input type="text" name="question" id="qs4"> </div>
+                <div class="options">
+                    <div class="opt1"><input type="radio"  name="answer4" id="doption1"> <input type="text" class="textin" name="answer" id="wdoption1"> </div>
+                    <div class="opt2"><input type="radio"  name="answer4" id="doption2"> <input type="text" class="textin" name="answer" id="wdoption2"> </div>
+                    <div class="opt3"><input type="radio"  name="answer4" id="doption3"> <input type="text" class="textin" name="answer" id="wdoption3"> </div>
+                    <div class="opt4"><input type="radio"  name="answer4" id="doption4"> <input type="text" class="textin" name="answer" id="wdoption4"> </div>
+                </div>
+            </div>
+
+                <div class="input5 lastInput align" id="lastElement">
+                    
+                    
+                <div class="question"> <span>Qs</span>  <input type="text" name="question" id="qs5"> </div>
+                <div class="options">
+                    <div class="opt1"><input type="radio"  name="answer5" id="eoption1"> <input type="text" class="textin" name="answer" id="yeoption1"> </div>
+                    <div class="opt2"><input type="radio"  name="answer5" id="eoption2"> <input type="text" class="textin" name="answer" id="yeoption2"> </div>
+                    <div class="opt3"><input type="radio"  name="answer5" id="eoption3"> <input type="text" class="textin" name="answer" id="yeoption3"> </div>
+                    <div class="opt4"><input type="radio"  name="answer5" id="eoption4"> <input type="text" class="textin" name="answer" id="yeoption4"> </div>
+                </div>
+            </div>
+
+                </div>
+                <div class="save">
+                <input type="submit" value="Save Quiz" id="saveQuiz"> 
+                </div>
+
+            </form>
+        
+        </div>
+    </div>
+    <div>
+       <button type="button" class="btn btn-primary backbtn"><a href="index.html" class="nav-link">Back</a></button>
+    </div>
+    <div class="topic-pop" id="pop">
+        <h1 id="chosetop">Choose your Topic</h1>
+        <div class="formBox">
+        <form>
+            <div class="topic-input">
+                <div class="sports">
+                    <input type="radio" name="topic" id="sports" value="Sports" >
+                    <label for="sports">Sports</label>
+                </div>
+            <div class="music">
+                <input type="radio" name="topic" id="music" value="Music" >
+                <label for="music">Music</label>
+            </div>
+            <div class="literature">
+                <input type="radio" name="topic" id="literature" value="Literature" >
+                <label for="literature">Literature</label>
+            </div>
+            
+           <div class="food">
+               <input type="radio" name="topic" id="food" value="Food">
+            <label for="food">Food</label>
+           </div>
+            <div class="videogames">
+                <input type="radio" name="topic" id="videogames" value="Video-Games">
+                <label for="videogames">Video-Games</label>
+            </div>
+            <div class="corporate">
+                <input type="radio" name="topic" id="corporate" value="Corporate">
+                <label for="corporate">Corporate</label>
+            </div>
+            <div class="general">
+                <input type="radio" name="topic" id="general" value="General-Knowledge">
+                <label for="general">General-Knowledge</label>
+            </div>
+            <div class="other">
+                <input type="radio" name="topic" id="other" value="other">
+                <label for="other">Any-Other</label>
+            </div>
+            <div class="submit">
+                <input value="Submit" type="submit" id="submitTopic" onclick="closePopUp()">
+            </div>
+           
+        </div>
+        </form>
+    </div>
+    </div>
+    <div class="popup">
+          
+        <h2 id="play1">Your Quiz saved Succesfully!</h2>
+       
+        
+        <div class="lastbtn">   
+        <button type="button"  id="playNow" class="btn btn-primary "><a  class="nav-link" href="quizplay.html">Play now</a></button>
+        <button type="button"  id="goBack" class="btn btn-primary "><a class="nav-link" href="index.html">Go back</a></button>
+    </div>
+  
+    
+       
+    </div>
+
+   
+   
+
+    
+    <script src="quizinput.js"></script>
+    <script src="quizinput1.js" type="module"></script>
+   
+</body>
+</html>

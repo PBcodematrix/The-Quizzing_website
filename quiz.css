@@ -1,0 +1,79 @@
+ /*                                                          Pop-Up                */
+
+/* body{
+    display: flex;
+    justify-content: center;
+    color:#301E67;
+} */
+.container2{
+    position: absolute;
+    /* bottom: 500px; */
+    /* width: 350px; */
+   visibility: visible;
+    margin-top:30px;
+  
+    height: 500px;
+    background-color:#B6EADA ;
+    border-radius:20px;
+    box-shadow:0 16px 12px 0 , 0 10px 15px 0 rgba(255,255,255,0.5) ;
+    /* transform: scale(0.1); */
+    transition: bottom 0.4s , transform 0.4s ;
+
+   
+   
+}
+.container2 h1{
+                text-align: center;
+}
+.container h1{
+    text-align: center;
+}
+.input{
+  display:flex;
+  
+  
+  height: 350px;
+  flex-direction: column;
+
+}
+.input div{
+    margin-top: 20px;
+    font-size:20px;
+    font-weight: 500;
+    margin-left:30px;
+}
+label:hover{
+    cursor: pointer;
+    color: #1100fc;
+
+}
+.submit input{
+    display: inline-block;
+    position: relative;
+    left:70px;
+    height:40px;
+    width:150px;
+    background-color:#301E67;
+    color:#FFF;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-size:18px;
+
+}
+.submit input:hover{
+    cursor: pointer;
+    background-color: #4e398b;
+    position:relative;
+    bottom: 2px;
+    
+}
+.openPopUp{
+    position: relative;
+    bottom: 0;
+    visibility: visible;
+    transform: scale(1);
+
+    
+}
+

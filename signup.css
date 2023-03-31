@@ -1,0 +1,164 @@
+body{
+    height:100vh;
+    background-image: url(login-images/pic-6.jpg);
+    background-position: center;
+    background-size:cover;
+    
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+
+}
+.form-box{
+    position:relative;
+    width: 350px;
+    height:550px;
+    border:2px solid rgba(255,255,255,1);
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 10px 8px 0 rgba(255,255,255,1) ;
+
+}
+.form-box h2{
+    color: white;
+    text-align:center;
+    font-size: 35px;
+    
+    
+}
+.inputBox{
+    position: relative;
+    margin: 50px 0;
+    width:300px;
+    border-bottom: 2px solid #fff;
+
+
+}
+.inputBox input{
+    background-color: transparent;
+    border:none;
+    outline:none;
+    color: #fff;
+    width:100%;
+    padding:0 20px 5px 5px;
+    font-size:16px;
+    
+
+}
+input::placeholder{
+    color:#fff;
+    
+}
+.btn{
+    color:#fff;
+    background-color: rgb(4, 138, 175);
+    height:30px;
+    width:250px;
+    border: none;
+    border-radius:30px;
+    cursor: pointer;
+    font-size:16px;
+}
+.btn:hover{
+    background-color:rgb(7, 154, 194) ;
+}
+
+.login{
+    position: relative;
+    top: 40px;
+    font-weight:500;
+    left:-80px;
+    
+}
+.login a{
+    text-decoration:none;
+    color: blue;
+    margin-left: 10px;
+}
+
+#error{
+    position: relative;
+    top: 100px;
+    right:70px;
+    color:red;
+    font-weight:600;
+}
+i{
+    position:absolute;
+    right:10px;
+}
+.eye i{
+    cursor:pointer;
+}
+.openEye{
+    visibility: hidden;
+}
+
+.eyeSlashp{
+    visibility: hidden;
+}
+.eyeSlashcp{
+    visibility: hidden;
+}
+.popup{
+    position: absolute;
+    background-color: #FD8A8A;
+    width:25rem;
+    height:12rem;
+    color:#13005A;
+    box-shadow:0 10px 5px 0 ;
+    width:0px;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition:width 0.4s,transform 0.4s;
+   
+    
+}
+.popup h2{
+    text-align: center;
+    width:120px;
+    line-height:1.4;
+    font-size:28px;
+    margin:auto;
+}
+
+.popLogIn{
+    position: absolute;
+    left:155px;
+    margin-top:20px;
+    margin-bottom:20px;
+    width:100px;
+    height:40px;
+    border-radius:10px;
+    border: none;
+    background-color: #F2F7A1;
+
+
+}
+.popLogIn a{
+    text-decoration: none;
+    font-size:16px;
+    color: #13005A;
+}
+.popLogIn:hover{
+    position: relative;
+    bottom:3px;
+}
+
+.blur{
+    filter: blur(10px);
+    pointer-events: none;
+    user-select: none;
+}
+.openPopup{
+    visibility:visible;
+    width:25rem;
+    transform:scale(1);
+}

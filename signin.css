@@ -1,0 +1,105 @@
+body{
+    height:100vh;
+    background-image:  url(login-images/pic-6.jpg);
+    background-position: center;
+    background-size:cover;
+    
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+
+}
+.form-box{
+    position:relative;
+    width: 350px;
+    height:550px;
+    border:2px solid rgba(255,255,255,1);
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 10px 8px 0 rgba(255,255,255,1) ;
+
+}
+.form-box h2{
+    color: white;
+    text-align:center;
+    font-size: 35px;
+    
+    
+}
+.inputBox{
+    position: relative;
+    margin: 80px 0;
+    width:300px;
+    border-bottom: 2px solid #fff;
+
+
+}
+.inputBox input{
+    background-color: transparent;
+    border:none;
+    outline:none;
+    color: #fff;
+    width:100%;
+    padding:0 20px 5px 5px;
+    font-size:16px;
+    
+
+}
+input::placeholder{
+    color:#fff;
+    
+}
+.btn{
+    color:#fff;
+    background-color: rgb(4, 138, 175);
+    height:30px;
+    width:250px;
+    border: none;
+    border-radius:30px;
+    cursor: pointer;
+    font-size:16px;
+}
+.btn:hover{
+    background-color:rgb(7, 154, 194) ;
+}
+
+.register{
+    position: relative;
+    top: 50px;
+    font-weight:500;
+    left:-50px;
+    
+}
+.register a{
+    text-decoration:none;
+    color: blue;
+    margin-left: 10px;
+}
+i{
+    position:absolute;
+    right:10px;
+}
+.eye i{
+    cursor:pointer;
+}
+.openEye{
+    visibility: hidden;
+}
+.eyeSlashp{
+    visibility: hidden;
+}
+.eyeSlashcp{
+    visibility: hidden;
+}
+.wrong{
+    border:1px solid red;
+}
+
+
